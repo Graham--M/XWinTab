@@ -13,6 +13,8 @@ This uses the ``libxcb.so.1`` and ``libxcb-xinput.so.0`` libraries. On Debian/Ub
 
 To build it yourself, you will also need to install the following packages: ``libxcb-xinput-dev``, ``wine64-tools``, and ``gcc-mingw-w64``.
 
+On NixOS: ``nix-shell -p gcc pkgsCross.mingwW64.stdenv.cc wine64 xorg.libxcb xorg.xcbutilwm``
+
 Installation
 ------------
 1. With Rebelle already installed, copy **BOTH** ``wintab32.dll`` and ``XWinTabHelper.dll.so`` into the installation directory (the one with the ``Rebelle 7.exe``).
